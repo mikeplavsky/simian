@@ -1,5 +1,5 @@
 ```bash
-docker pull mikeplavsky/simian
-docker run -ti --rm -v $(pwd):/check mikeplavsky/simian bash
-simian -reportDuplicateText *.py
-```
+git clone https://github.com/mikeplavsky/simian.git
+cd <your project>
+<where it was cloned>/simian/run.sh *.py
+``` 
