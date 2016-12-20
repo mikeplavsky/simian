@@ -1,5 +1,4 @@
-```bash
-docker pull mikeplavsky/simian
-docker run -ti --rm -v $(pwd):/check mikeplavsky/simian bash
-simian -reportDuplicateText *.py
+Just go to your project directory and run 
 ```
+<where it was cloned>/simian/run.sh
+``` 
