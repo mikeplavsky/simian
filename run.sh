@@ -1,8 +1,10 @@
 CMD="simian $@"
+DIR=${PWD##*/}
+echo $DIR
 
 docker run \
     -ti \
     --rm \
-    -w /check \
-    -v $(pwd):/check mikeplavsky/simian \
+    -w /$DIR \
+    -v $(pwd):/$DIR mikeplavsky/simian \
     $CMD
